@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CI/CD Demo App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+        
+        .emoji {
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+        
+        .status {
+            background: #f0f9ff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .endpoints {
+            text-align: left;
+            margin-top: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        
+        code {
+            background: #e9ecef;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 5px 10px;
+            background: #28a745;
+            color: white;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="emoji">🚀</div>
+        <h1>CI/CD Pipeline Demo</h1>
+        
+        <p>This is a minimal application to demonstrate Jenkins CI/CD pipeline capabilities.</p>
+        
+        <div class="status">
+            <h3>🟢 Application Status: Running</h3>
+            <p>Version: <strong>1.0.0</strong></p>
+            <p>Environment: <span class="badge">Production</span></p>
+        </div>
+        
+        <div class="endpoints">
+            <h3>📊 Available Endpoints:</h3>
+            <ul>
+                <li><code>GET /</code> - Application info (this page)</li>
+                <li><code>GET /health</code> - Health check endpoint</li>
+                <li><code>GET /api-docs</code> - API documentation</li>
+            </ul>
+            
+            <h3>🔧 Pipeline Stages:</h3>
+            <ol>
+                <li>Code Checkout ✓</li>
+                <li>Dependency Installation ✓</li>
+                <li>Code Linting ✓</li>
+                <li>Unit Testing ✓</li>
+                <li>Build & Package ✓</li>
+                <li>Docker Build ✓</li>
+                <li>Deployment ✓</li>
+            </ol>
+        </div>
+        
+        <div style="margin-top: 30px; font-size: 0.9em; color: #666;">
+            <p>This application is automatically built, tested, and deployed using Jenkins CI/CD pipeline.</p>
+        </div>
+    </div>
+</body>
+</html>
